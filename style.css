@@ -1,0 +1,66 @@
+:root{
+    --primary : #de9a53;
+    --text : #100f0b;
+    --text2  : #b8b689;
+    --gris : #171c18;
+    --bg : #fffbff;
+
+    --radius : 15px;
+}
+
+*, body{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: var(--bg);
+}
+
+#container{
+    padding : 2% 10% 2% 4.5%;
+    width : 100%;
+    height : 100vh;
+}
+#container #nav-bar{
+    position: relative;
+    width : 100%;
+}
+#container #nav-bar .bar-contain{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top : 0;
+    left : 0;
+    width : 100%;
+    z-index: 5;
+}
+#container #nav-bar .logo p{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#container #nav-bar .menu{
+    display: flex;
+    gap : 50px;
+}
+#container #nav-bar .menu a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color : var(--bg);
+}
+#container #nav-bar .menu a:hover{
+    color : var(--primary)
+}
+#container #nav-bar .menu .course{
+    display: inline-block;
+    width : 52px;
+    overflow: hidden;
+}
+#container #nav-bar .menu .course a:first-child{
+    margin: 0;
+}
+#container #nav-bar .menu .course a{
+    display: block;
+    margin : 8px 0;
+}
