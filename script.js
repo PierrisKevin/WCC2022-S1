@@ -15,9 +15,10 @@ class scrollDown{
     }
     setDefaultHeight(){
         this.elem.style.height = this.getHeight()+"px";
+        this.elem.style.width = this.width + 15+"px"
     }
     setHider(){
-        this.elem.style.width = this.width+"px";
+        this.elem.style.width = this.width+15+"px";
         this.elem.style.height = this.height+"px";
     }
     setvisible(){
@@ -37,3 +38,9 @@ class scrollDown{
 const scrool = new scrollDown(courses)
 scrool.setDefaultHeight()
 scrool.controlEvent()
+
+const menu = document.querySelector("#container #nav-bar .menu")
+const btn = document.querySelector("#container #nav-bar button")
+btn.addEventListener("click", ()=>{
+    menu.classList.toggle("active")
+})

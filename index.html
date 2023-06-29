@@ -7,6 +7,10 @@
     <title>S1|WCCC</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./animation.css">
+
+    <link rel="stylesheet" href="./ico/all.min.css">
+    <link rel="stylesheet" href="./ico/fontawesome.min.css">
 
     <script src="./script.js" defer></script>
 </head>
@@ -21,7 +25,7 @@
                 <div class="menu">
                     <a href="#">home</a>
                     <div class="course">
-                        <a href="#">course</a>
+                        <a href="#">course<i class="fa-solid fa-chevron-down"></i> </a>
                         <a href="#">Other</a>
                         <a href="#">Other1</a>
                         <a href="#">Other2</a>
@@ -29,8 +33,14 @@
                     </div>
                     <a href="#">blog</a>
                     <a href="#">pricing</a>
-                    <a href="#">Sign up</a>
+                    <a href="#">Sign up <i class="fa-sharp fa-solid fa-arrow-right"></i> </a>
                 </div>
+                <button class="activeBars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
             </nav>
         </header>
         <div id="home">
@@ -64,6 +74,18 @@
 
                     <div class="mentor-contain">
                         <p>99+ certified mentor</p>
+                        <div class="image-mentor">
+                            <div class="img" style="--i:15px; --j:10"></div>
+                            <div class="img" style="--i:30px; --j:9"></div>
+                            <div class="img" style="--i:45px ;--j:8"></div>
+                            <div class="img" style="--i:60px;--j:7"></div>
+                            <input type="file" name="imageMentor" id="mentor">
+                            <div class="img">
+                                <label for="mentor">
+                                    <i class="fa-regular fa-plus"></i>
+                                </label>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="box"></div>

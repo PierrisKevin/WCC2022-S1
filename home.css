@@ -16,7 +16,7 @@
     width : 80%;
 }
 #container #home .text-contain .text h1{
-    font-size: 4em;
+    font-size: 4.5em;
 }
 #container #home .text-contain .text h1 span{
     display: inline-block;
@@ -32,6 +32,7 @@
     width : 12%;
     height : 3px;
     background: var(--primary);
+    /* animation: lines 1.4s linear infinite; */
 }
 #container #home .text-contain .text p{
     margin-top: 20px;
@@ -75,8 +76,8 @@
 
 #container #home .images{
     position: relative;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     width : 45%;
     height: 100%;
 }
@@ -87,7 +88,7 @@
     width: 80%;
     height : 90%;
     background: var(--gris);
-    z-index: -1;
+
 }
 #container #home .images .image-contain .deco-define{
     display: flex;
@@ -109,16 +110,56 @@
     position: absolute;
     justify-content: center;
     align-items: center;
+    gap : 10px;
     width : 50%;
     height : 20%;
     bottom : -10%;
     left : -10%; 
     background: #fff;
     border-radius: 5px;
+    z-index: 5;
 }
 #container #home .images .image-contain .mentor-contain p{
     font-weight: bolder;
     text-transform: capitalize;
+}
+#container #home .images .image-contain .mentor-contain .image-mentor{
+    position: relative;
+    width : 38%;
+}
+#container #home .images .image-contain .mentor-contain .image-mentor .img{
+    display: inline-block;
+    position: absolute;
+    right : var(--i);
+    width : 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(72, 66, 66);
+    border: 1px solid #fff;
+    z-index: var(--j);
+}
+#container #home .images .image-contain .mentor-contain .image-mentor .img img{
+    width : 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#container #home .images .image-contain .mentor-contain .image-mentor .img:last-child{
+    padding-top: 5px;
+    text-align: center;
+    right : 0;
+    z-index: 11;
+}
+#container #home .images .image-contain .mentor-contain .image-mentor .img:last-child i{
+    color : var(--bg)
+}
+
+#container #home .images .image-contain .mentor-contain .image-mentor .img label{
+    cursor:pointer;
+}
+#container #home .images .image-contain .mentor-contain .image-mentor input{
+    display: none;
 }
 
 #container #home .images .image-contain .box{
@@ -139,4 +180,64 @@
     width : 60px;
     height: 45px;
     transform: rotate(-30deg);
+}
+
+
+/* Partie reponsive design  */
+
+@media (max-width : 1100px){
+    #container #home .text-contain .text h1{
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width : 850px){
+    #container #home{
+        flex-direction: column;
+        gap : 50px;
+    }
+    #container #home .text-contain{
+        width : 100%;
+        height : 80vh;
+        justify-content: center;
+
+    }
+    #container #home .images{
+        display: flex;
+        justify-content: center;
+        width : 100%;
+        height: 70vh;
+    }
+    #container #home .images .image-contain{
+        top : 0;
+        width : 60%
+    }
+}
+
+@media (max-width : 550px){
+    #container #home .text-contain .text {
+        width: 100%;
+    }
+    #container #home .text-contain .text h1{
+        font-size: 2em;
+    }
+    #container #home .text-contain .text h1 .image{
+        width: 25px;
+        height: 25px;
+    }
+    #container #home .images{
+        overflow: hidden;
+        width : 100%;
+        height: 70vh;
+    }
+    #container #home .images .image-contain{
+        top : 0;
+        width : 80%
+    }
+    #container #home .text-contain .stars{
+        width : 100%
+    }
+    #container #home .images .image-contain .deco-define p{
+        font-size: .8em;
+    }
 }

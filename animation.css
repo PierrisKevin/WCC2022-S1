@@ -1,0 +1,11 @@
+@keyframes lines {
+    0%{
+        width : 5%;
+    }
+    50%{
+        width : 12%;
+    }
+    100%{
+        width : 5%;
+    }
+}
